@@ -1,0 +1,73 @@
+table, td {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainHeading{
+    text-align: center;
+    font-size: 24px;
+}
+#missingGrades{
+    text-align: center;
+    color: red;
+}
+#buttons{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+#addR{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#removeR{
+    background-color: #B22222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#addC{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#removeC{
+    background-color: #B22222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#redo{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#info{
+    text-align: center;
+    font-size: 10px;
+}
+/*styling also from w3schools and previous assignments*/

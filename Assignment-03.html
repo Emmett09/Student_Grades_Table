@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS230 Assignment 3 - Emmett Mulroy</title>
+    <link rel="stylesheet" type="text/css" href="Assignment-03.css">
+</head>
+
+<!---https://www.w3schools.com/tags/ev_onload.asp--->
+<!---adds listener and clones table as it loads--->
+<body onload="addListnerToTable();cloneTable()">
+
+<h3 id ="mainHeading">Student Grades and Averages</h3></nbsp>
+<p id="info">Click on a cell to edit</p>
+
+<!---https://www.w3schools.com/jsref/event_oninput.asp--->
+<table id="myTable" oninput="sum()">
+    <thead>
+    <tr>
+        <th>Sudent Name</th>
+        <th>Sudent ID</th>
+        <th>Asignment 1</th>
+        <th>Asignment 2</th>
+        <th>Asignment 3</th>
+        <th>Asignment 4</th>
+        <th>Asignment 5</th>
+        <th id = avg  onclick="toggleGrades()">Average (%)</th>
+    </tr>
+    </thead>
+
+    <!---https://www.w3schools.com/tags/att_global_contenteditable.asp--->
+    <tbody  contenteditable="true" >
+    <tr>
+        <td>Hubert Cumberdale</td>
+        <td>10000000</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Milford Cubicle</td>
+        <td>10000001</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Penny Pigtails</td>
+        <td>10000002</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Marjory Baxter</td>
+        <td>10000003</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Jeremy Fisher</td>
+        <td>10000004</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Barbara Price</td>
+        <td>10000005</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>David Firth</td>
+        <td>10000006</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Kenneth Rogers</td>
+        <td>10000007</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Toby Bordois</td>
+        <td>10000008</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Yvonne Papanak</td>
+        <td>10000009</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    </tbody>
+</table>
+
+<p id=missingGrades>Missing grades</p>
+<div id="buttons">
+    <button id="addR"type="button" onclick="addRow()">Add row</button>
+    <button id="removeR" onclick="removeRow()">Delete row</button>
+    </br>
+    <button id="addC" onclick="addColumn()">Add column</button>
+    <button id="removeC" onclick="deleteColumn()">Delete column</button>
+    </br>
+    <button id="redo" onclick="reset()">Reset</button>
+</div>
+</body>
+<script src="Assignment-03.js"></script>
+</html>
+
+<!---used w3schools and previous assignments to make tables and buttons--->
